@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head lang="es">        
+        <title>Registro con Servlets</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilos.css">        
+    </head>
+    <body>
+        <section id="header">            
+            <h2>Registro en formulario con Servlets</h2>
+        </section>    
+        <form name="registro-personas" action="/EnvioDatosFormulario/ServletRegistro" method="post">            
+            <div id="div-form">
+                <div class="campo">                     
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="campo-form" placeholder="Ingrese aquí su nombre">                   
+                </div>
+                <div class="campo">                    
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" class="campo-form" placeholder="Ingrese aquí su apellido">                    
+                </div>
+                <div class="campo">                     
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" id="edad" class="campo-form" placeholder="Ingrese aquí su edad"> 
+                </div>                
+                <div class="campo">                     
+                    <label for="sexo">Sexo</label>                    
+                    <select name="sexo" class="campo-form" id="sexo">
+                        <option value="m">Masculino</option>
+                        <option value="f">Femenino</option>
+                        <option value="o">otro</option>
+                    </select>                       
+                </div>
+                <div class="campo">                     
+                    <label for="telefono">Teléfono </label>
+                    <input type="text" id="telefono" name="telefono" class="campo-form" placeholder="Ingrese aquí su teléfono">                    
+                </div>
+                <div class="campo">                     
+                    <label for="correo">Email </label>
+                    <input type="email" id="correo" name="email" class="campo-form" placeholder="Ingrese aquí su correo electrónico">                    
+                </div>
+                <input type="submit" class="btn-submit" value="Enviar datos">
+            </div>
+        </form>        
+    </body>
+</html>

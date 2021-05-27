@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+.campo-form{
+    display:flex;     
+    padding: 10px;   
+    width: 95%;
+    border-radius: 10px;
+    border-color: greenyellow;
+    border-width: 2px;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+.campo{          
+    width: 100%;       
+    margin:10px 10px;
+    text-align: center;
+}
+#div-form{    
+    width: 40%;
+    min-width: 300px;
+    margin: 25px auto;    
+}
+form label{
+    color:azure;
+}
+.btn-submit{
+    display:flex;     
+    padding: 10px;   
+    width: 30%;
+    margin: 30px auto;
+    font-size: 20px;
+    border-color: greenyellow;
+    background-color: white;
+    border-width: 3px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
