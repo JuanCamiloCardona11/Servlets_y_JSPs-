@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head lang="es">
+        <title>Carrito de compras</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Juan Camilo Cardona Calderón">  
+        <link rel ="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <h1>Carrito de Compras</h1>
+        <form id="form-ingreso" name="form_compra" action="/CarritoComprasServlet/ServletCarrito" method="get">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" class="input-campo" name="nombre" placeholder="Ingrese aquí el nombre del producto">
+            <label for="precio">Precio</label>
+            <input type="number" id="precio" class="input-campo" name="precio" placeholder="Ingrese aquí el precio del producto">
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" class="input-campo" name="cantidad" placeholder="Ingrese aquí la cantidad">
+            <label for="fin-compra">Finalizar Compra</label>
+            <input type="checkbox" id="fin-compra" class="input-campo" name="fin-compra">
+            <input type="submit" id="btn-comprar" value="Comprar producto">
+        </form>
+        <script src="js/app.js"></script>
+    </body>
+</html>
